@@ -31,6 +31,8 @@ https://dart.dev/tools/dart-analyze
 
 ssl e tls- bibliotecas como http implementam medidas protetivas por padrao
 https://pub.dev/packages/http
+metodo alternativo
+https://dwirandyh.medium.com/securing-your-flutter-app-by-adding-ssl-pinning-474722e38518
 
 monitoramento e logs- ocorre atraves do uso de pacotes, pode ocorrer atraves do proprio banco do firebase por padrao
 https://firebase.google.com/docs/crashlytics?hl=pt-br
