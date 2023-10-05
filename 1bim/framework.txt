@@ -1,0 +1,37 @@
+flutter-no geral ultra seguro por padrao mas nao imune
+
+xss- implementado por padrao pela estrutura de codigo montada atraves de widgets
+https://api.flutter.dev/flutter/widgets/widgets-library.html
+
+injeção sql- implementavel por padrao por conta da vasta maior parte de plugins/bibliotecas implementarem parametização das querys.
+https://pub.dev/packages/sqflite#using-parameters
+https://pub.dev/packages/mysql_client
+
+Cross-Site Request Forgery (CSRF)- nao implementavel pelo flutter em si pois nao lida com solicitaçoes http partindo do cliente, e nas bibliotecas que permitem a conexao segura é checada por padrao, escapando do mal uso da ferramenta pelo desenvolvedor
+https://pub.dev/packages/http
+
+Gerenciamento de sessao- implementavel por padrao pelo pacote flutter secure storage
+https://pub.dev/packages/flutter_secure_storage
+
+Roteamendo e urls seguras- implementavel por meio do controle de acesso e autenticação
+https://docs.flutter.dev/ui/navigation
+https://stackoverflow.com/questions/76899985/most-secure-way-to-guard-screens-with-authentication-in-flutter-and-firebase
+
+Validacao de dados- implementavel por conta da forma geral de funcionamento de widgets e logica de programação
+https://docs.flutter.dev/cookbook/forms/validation
+https://api.flutter.dev/flutter/material/TextField-class.html
+
+configuração segura- possivel atraves do pacote dotenv
+https://pub.dev/packages/flutter_dotenv
+
+tratamento de erros- ocorre de forma basica atraves de try catches e logica de programação, nao necessariamente tendo um pacote ou maneira especifica
+
+atualizações de segurança- implementavel pois a ferramenta disponibiliza de diversos comandos para verificar bibliotecas ja existentes de maneira automatica para erros, por padrao, tambem existe uma ferramenta que analiza o seu codigo em si para vulnerabilidades e erros gerais
+https://dart.dev/tools/dart-analyze
+
+ssl e tls- bibliotecas como http implementam medidas protetivas por padrao
+https://pub.dev/packages/http
+
+monitoramento e logs- ocorre atraves do uso de pacotes, pode ocorrer atraves do proprio banco do firebase por padrao
+https://firebase.google.com/docs/crashlytics?hl=pt-br
+https://pub.dev/packages/logger

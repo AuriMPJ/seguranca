@@ -1,0 +1,3 @@
+csp- Ajuda a mitigar ataques XSS ao especificar quais fontes de conteúdo são consideradas seguras para carregar em uma página da web. Definir regras estritas sobre quais scripts, estilos, imagens e outros recursos podem ser executados em seu site.
+validação de entrada- validar entradas do usuario no lado do servidor para impedir codigos maliciosos.
+framewroks seguros- grandes framewroks modernos possuem diversas boas praticas de segurança "imbutidas" em seu funcionamento por padrao, como escape automatico e a propria validação de dados inseridos.

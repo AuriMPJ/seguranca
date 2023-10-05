@@ -1,0 +1,3 @@
+Controle de acesso e autenticação/autorizacao, verificando a permissao do usuario antes de realizar acoes sensiveis
+Utilizar consultas parametizadas e orm para evitar ataques de injeção sql
+Utilizar plataformas/frameworks seguros para realizar a autenticação de usuario
