@@ -1,0 +1,17 @@
+1 - É uma expressão que se refere a um tipo de ataque cibernético em que uma terceira entidade se posiciona entre duas partes que estão se comunicando. Essa posição intermediária permite que o atacante intercepte e, em alguns casos, altere os dados da comunicação entre as duas partes sem o conhecimento delas.
+
+2 - Cain & Abel
+
+3 - 
+Em DNS: O atacante manipula as respostas do servidor DNS para que o cache do servidor ou de outros dispositivos seja corrompido, resultando em redirecionamento de tráfego para sites falsos, onde o atacante pode realizar ataques adicionais.
+Em ARP Cache: O atacante envia falsas mensagens ARP para associar seu próprio endereço MAC ao endereço IP de um dispositivo legítimo, levando a uma confusão na rede e o tráfego destinado ao dispositivo legítimo é interceptado pelo atacante.
+
+4 - Buscar senhas, descriptografar senhas, detectar a rede, gravar conversas VoIP, recuperar chaves de rede sem fio, descobrir senhas em cache, revelar caixas de senhas, recuperar chaves de rede sem fio, analisar o roteamento de protocolos, decifrar senhas criptografadas usando ataques de Brute-Force, Dictionary e de Cryptanal-ysis, análise de protocolos com SSH e HTTPS, descobrir as senhas Web dos roteadores Wi-Fi, utilizar tecnicas de injeção de pacotes que aceleram a captura de pacotes em uma rede, decifrar todos os tipos de senhas fortes, Melhorar a velocidade de quebra de senhas ele calcula hashes rapidamente, capturar trafego da rede, encontrar o endereço MAC de qualquer IP, Calcular uma rota precisa de seu dispositivo, para qualquer destino e ler o conteudo dos arquivos de senha PWL do Windows.
+
+5 - APOP – MD5; Cisco IOS – MD5; Cisco PIX – MD5; CRAM – MD5; Hashes de banco de dados Oracle e SIP; Hashes de chave compartilhada RADIUSIKE PSK; Kerberos 5;LM e NTLM; MADURA MD – 160; MD2; MD4; MD5;MySQL; NTLMv2; OSPF – MD5; RIPv2 MD5; SHA – 1; SHA – 2 e VNC Triplo DES - HMAC.
+Bem como SSH-1 e HTTPS.
+
+6 - 
+1 fase; o programa Cain é utilizado para descobrir quais dispositivos estão conectados à rede. Isso é feito por meio de uma interface gráfica que permite visualizar e escolher os dispositivos. Na Figura 13, é possível observar a identificação dos dispositivos pela informação do endereço MAC, que neste caso, parece ser o mesmo para a vítima e o atacante (080027b741ba).
+2 fase; o programa Cain é usado para realizar o envenenamento do cache ARP. Na Figura 14, é mostrado o envenenamento, onde o IP do gateway (switch) e o IP da vítima são escolhidos para o ataque. Na Figura 15, ocorre a captura do tráfego do dispositivo envenenado, demonstrando como o atacante intercepta e encaminha o tráfego entre a vítima e o destino real.
+

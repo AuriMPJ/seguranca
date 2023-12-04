@@ -1,0 +1,2 @@
+Copy-Item -Path ".\if.png" -Destination ".\final.png" -Force
+Add-Content -Path ".\final.png" -Value (Get-Content ".\texto.txt" -Raw)

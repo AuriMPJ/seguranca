@@ -1,0 +1,51 @@
+Criptografia
+
+A criptografia neste projeto é realizada associando cada caractere da 
+mensagem a uma cor única. O processo envolve três etapas principais:
+
+    Conversão ASCII para Hexadecimal:
+        Cada caractere da mensagem é convertido para seu valor correspondente na 
+        tabela ASCII.
+
+        Esse valor ASCII é então convertido para uma representação hexadecimal.
+
+    Definição da Cor:
+        O valor hexadecimal obtido é utilizado para definir a cor de fundo de uma 
+        caixa específica.
+
+        Para garantir consistência, sempre são considerados os dois últimos dígitos
+        do valor hexadecimal.
+
+    Exibição na Página HTML:
+        A caixa correspondente à letra é preenchida com a cor calculada.
+
+        Um texto visual também é exibido dentro da caixa para indicar qual 
+        caractere está associado àquela cor.
+
+Exemplo Prático
+
+Suponha a seguinte mensagem: "IFPR". Cada letra será associada a uma caixa 
+colorida da seguinte forma:
+
+    I é associado à cor #49, onde 49 é o valor ASCII de 'I' convertido para hexadecimal.
+    F é associado à cor #46, seguindo o mesmo processo.
+    E assim por diante.
+
+As caixas são exibidas em uma página HTML, permitindo visualizar as cores e, 
+consequentemente, a mensagem escondida.
+Como Decifrar a Mensagem
+
+Para decifrar a mensagem escondida, siga os seguintes passos:
+
+    Pegue o valor hexadecimal de cada cor:
+        No código HTML, encontre os valores hexadecimais das cores de cada caixa.
+        Eles são definidos como background-color para cada #box.
+
+    Substitua os dois últimos dígitos de cada cor pelos caracteres ASCII correspondentes:
+        Para cada valor hexadecimal, substitua os dois últimos dígitos pelos 
+        caracteres ASCII correspondentes.
+
+        Isso resultará na mensagem original.
+
+    Junte os caracteres ASCII para formar a mensagem:
+        Após realizar a substituição para cada cor, junte os caracteres ASCII obtidos para formar a mensagem completa.

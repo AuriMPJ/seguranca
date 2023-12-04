@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            text-align: center;
+        }
+        .box {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin: 5px;
+            position: relative;
+        }
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          function asciiHex(text) {
+            var ascii = text.charCodeAt(0);
+            
+            var hex = ("00" + ascii.toString(16)).slice(-2);
+
+            return hex;
+          }
+
+          function esconderTextoCor(boxId, text) {
+            var box = document.getElementById(boxId);
+            var newText = asciiHex(text);
+            
+            box.style.backgroundColor = '#' + newText + '0000';
+
+            var textElement = document.createElement('span');
+            textElement.className = 'text';
+            textElement.innerText = text;
+            box.appendChild(textElement);
+          }
+
+          esconderTextoCor('box1', 'I');
+          esconderTextoCor('box2', ' ');
+          esconderTextoCor('box3', 'F');
+          esconderTextoCor('box4', 'P');
+          esconderTextoCor('box5', 'R');
+          esconderTextoCor('box6', ' ');
+          esconderTextoCor('box7', 'd');
+          esconderTextoCor('box8', 'o');
+          esconderTextoCor('box9', ' ');
+          esconderTextoCor('box10', 'P');
+          esconderTextoCor('box11', 'a');
+          esconderTextoCor('box12', 'r');
+          esconderTextoCor('box13', 'a');
+          esconderTextoCor('box14', 'n');
+          esconderTextoCor('box15', 'a');
+        });
+    </script>
+    <title>Esteganografia</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+        <div class="box" id="box6"></div>
+        <div class="box" id="box7"></div>
+        <div class="box" id="box8"></div>
+        <div class="box" id="box9"></div>
+        <div class="box" id="box10"></div>
+        <div class="box" id="box11"></div>
+        <div class="box" id="box12"></div>
+        <div class="box" id="box13"></div>
+        <div class="box" id="box14"></div>
+        <div class="box" id="box15"></div>
+    </div>
+</body>
+</html>
